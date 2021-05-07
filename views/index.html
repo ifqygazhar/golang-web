@@ -1,0 +1,9 @@
+{{template "layout" .}}
+{{define "main"}}
+
+{{ range .}}
+    <div class="box-with-shadow">
+        {{.Name}} : {{.Price}} - {{.ProdukStatus}}
+    </div>
+{{end}}
+{{end}}

@@ -1,0 +1,18 @@
+{{ template "layout" .}}
+{{define "main"}}
+<div class="box-with-shadow">
+    <form action="/process" method="POST">
+        <div class="box-with-shadow">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="nama kamu" required>
+        </div>
+        <div class="box-with-shadow">
+            <label for="pesan">pesan</label>
+            <input type="text" name="pesan" placeholder="pesan kamu" required>
+        </div>
+        <div class="box-with-shadow">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+{{end}}
